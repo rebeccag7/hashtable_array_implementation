@@ -118,21 +118,17 @@ public class ArrayHashTable {
 			while (p1 != null && p1.name != name) {
 				p2 = p1;
 				p1 = p1.next;
-			}
-			
+			}			
 			// case 3.1: no match
 			if (p1 == null) {
 				System.out.println(name + " was not found in the hashtable.");
-				}
-			
+			}			
 			// case 3.2: match is found
 			else {
 				p1 = p1.next;
 				p2.next = p1;
 				System.out.println(name + " was removed from the hashtable.");
-			}
-			
+			}		
 		}
-
 	}
 }
