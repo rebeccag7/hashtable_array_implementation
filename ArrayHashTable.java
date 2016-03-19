@@ -3,8 +3,7 @@ package arrayhashtable;
 public class ArrayHashTable {
 
 	int tableSize;
-	//Define the hash table which consists of buckets
-	//which contains a pointer to an item
+	//Define the hash table which consists of buckets that contains a pointer to an item
 	Item hashtable[]; 
 
 	public ArrayHashTable () {
@@ -29,8 +28,7 @@ public class ArrayHashTable {
 		int index = hash(name);
 		if (hashtable[index] == null) {
 			hashtable[index] = new Item (name, drink);
-		}
-		else {
+		} else {
 			Item ptr = hashtable[index];
 			Item newItem = new Item(name, drink);
 			while (ptr.next != null) {
