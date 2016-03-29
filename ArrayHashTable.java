@@ -3,7 +3,7 @@ package arrayhashtable;
 public class ArrayHashTable {
 
 	int tableSize;
-	//Define the hash table which consists of buckets that contains a pointer to an item
+	//Define the hash table which consists of buckets that contain a pointer to an item
 	Item hashtable[]; 
 
 	public ArrayHashTable () {
